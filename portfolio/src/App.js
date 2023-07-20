@@ -6,10 +6,12 @@ import Container from "react-bootstrap/esm/Container";
 import Projects from "./Components/Projects"
 import ContactMeForm from "./Components/ContactMe";
 import Header from "./Components/Header";
+import NavBar from "./Components/NavBar";
 
 function App() {
   return (
-    <Container fluid = "xs">
+    <Container fluid >
+      <NavBar/>
       <Header/>
       <AboutMe/>
       <Skills/>
