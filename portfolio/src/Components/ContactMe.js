@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 
 /**
  * This method currently outlines the ContactMe method at the bottom of my webpage.
+ * 
  * @returns 
  */
 function ContactMeForm() {
