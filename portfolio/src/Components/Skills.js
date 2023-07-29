@@ -1,19 +1,37 @@
-import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card';
+//import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
+//import Card from 'react-bootstrap/Card';
+import ButtonGroup from 'react-bootstrap/esm/ButtonGroup';
+//import Container from 'react-bootstrap/esm/Container';
+import Stack from 'react-bootstrap/Stack';
+
+
+/*const SkillsButton = ({className, value, onClick }) => {
+  return (
+    <button className={className} onClick={onClick}>
+      {value}
+    </button>
+  );
+};
+*/
+//        {arrButton.map((btn, i) => <Button variant="secondary">{btn}</Button>)}
 
 /**
  * This function creates a creates a dropdown menu with a list of skills.
  * 
+ * @arguments String Skill Type, Array of skills
  * @returns returns a DropDown menu
  */
-function Skills() {
+function Skills({title, arrButton}) {
   return (
-  <Container>
-    <Card className="bg-dark text-white"> 
-      <Card.Header>PlaceHolder for Skills Portion</Card.Header>
-      <Card.Header>PlaceHolder for Skills Portion</Card.Header>
-    </Card> 
-  </Container>
+    <>
+    <header className="p-2 ms-auto">{title}</header> 
+    <ButtonGroup aria-label={title}>
+      <Stack direction="horizontal" gap={4}>
+        { arrButton.map((btn) => <Button variant="secondary">{btn}</Button> ) }
+      </Stack>
+    </ButtonGroup>
+    </>
   );
 }
 

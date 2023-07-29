@@ -7,13 +7,22 @@ import Container from "react-bootstrap/esm/Container";
 import ContactMeForm from "./Components/ContactMe";
 import NavBar from "./Components/NavBar";
 
+
+const languages = ["C", "Java", "Python", "React", "HTML", "CSS", "JavaScript"];
+//const languages = [name = "C", image = "link to image"}
+
+const tech = ["Git", "Visual Studio"];
+
+const concepts = ["Agile", "Web development", "Information Security"]
+
 function App() {
   return (
     <Container fluid >
       <NavBar/>
-      <Header/>
       <AboutMe/>
-      <Skills/>
+      <Skills title="Languages" arrButton={languages}/>
+      <Skills title="Tech" arrButton={tech}/>
+      <Skills title="Concepts" arrButton={concepts}/>
       <ContactMeForm/>
     </Container>
   );
