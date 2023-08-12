@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import './ContactMe.css';
 
 /**
  * This method currently outlines the ContactMe method at the bottom of my webpage.
@@ -22,8 +23,6 @@ function ContactMeForm() {
               <Form.Label>Email</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
             </Form.Group>
-    
-    
           </Row>
     
           <Form.Group className="mb-3" controlId="formGridAddress1">
@@ -60,7 +59,7 @@ function ContactMeForm() {
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
     
-          <Button variant="primary" type="submit">
+          <Button variant="black" type="submit">
             Submit
           </Button>
         </Form>
