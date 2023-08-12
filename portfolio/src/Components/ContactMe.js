@@ -3,18 +3,18 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import './ContactMe.css';
+//import './ContactMe.css';
 
 /**
  * This method currently outlines the ContactMe method at the bottom of my webpage.
  * 
  * @returns 
  */
-function ContactMeForm() {
+function ContactMe() {
     return (  
       <Container>
-          <Form>
-          <Row className="mb-3">
+        <Form className="ContactMe">
+          <Row>
             <Form.Group as={Col} controlId="formGridPassword">
               <Form.Label>Name</Form.Label>
               <Form.Control type="name" placeholder="Name" />
@@ -24,7 +24,18 @@ function ContactMeForm() {
               <Form.Control type="email" placeholder="Enter email" />
             </Form.Group>
           </Row>
-    
+          <Row> 
+            <Button variant="Dark" type="submit"> Submit </Button>
+          </Row>
+        </Form>
+      </Container>
+    );
+  }
+
+  export default ContactMe;
+
+  /**
+   *  
           <Form.Group className="mb-3" controlId="formGridAddress1">
             <Form.Label>Address</Form.Label>
             <Form.Control placeholder="1234 Main St" />
@@ -58,13 +69,5 @@ function ContactMeForm() {
           <Form.Group className="mb-3" id="formGridCheckbox">
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
-    
-          <Button variant="black" type="submit">
-            Submit
-          </Button>
-        </Form>
-      </Container>
-    );
-  }
-
-  export default ContactMeForm;
+   * 
+   */
