@@ -1,40 +1,43 @@
-import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import Container from "react-bootstrap/Container";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 //import './ContactMe.css';
 
 /**
  * This method currently outlines the ContactMe method at the bottom of my webpage.
- * 
- * @returns 
+ *
+ * @returns
  */
 function ContactMe() {
-    return (  
-      <Container>
-        <Form className="ContactMe">
-          <Row>
-            <Form.Group as={Col} controlId="formGridPassword">
-              <Form.Label>Name</Form.Label>
-              <Form.Control type="name" placeholder="Name" />
-            </Form.Group>
-            <Form.Group as={Col} controlId="formGridEmail">
-              <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-            </Form.Group>
-          </Row>
-          <Row> 
-            <Button variant="Dark" type="submit"> Submit </Button>
-          </Row>
-        </Form>
-      </Container>
-    );
-  }
+  return (
+    <Container>
+      <Form className="ContactMe">
+        <Row>
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Name</Form.Label>
+            <Form.Control type="name" placeholder="Name" />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridEmail">
+            <Form.Label>Email</Form.Label>
+            <Form.Control type="email" placeholder="Enter email" />
+          </Form.Group>
+        </Row>
+        <Row>
+          <Button variant="Dark" type="submit">
+            {" "}
+            Submit{" "}
+          </Button>
+        </Row>
+      </Form>
+    </Container>
+  );
+}
 
-  export default ContactMe;
+export default ContactMe;
 
-  /**
+/**
    *  
           <Form.Group className="mb-3" controlId="formGridAddress1">
             <Form.Label>Address</Form.Label>
